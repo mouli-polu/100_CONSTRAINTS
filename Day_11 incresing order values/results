@@ -1,1 +1,25 @@
-
+ incr_var [0] =12
+ incr_var [1] =14
+ incr_var [2] =21
+ incr_var [3] =32
+ incr_var [4] =36
+ incr_var [5] =37
+ incr_var [6] =40
+ incr_var [7] =49
+ incr_var [8] =50
+ incr_var [9] =51
+ incr_var [10] =52
+ incr_var [11] =54
+ incr_var [12] =56
+ incr_var [13] =57
+ incr_var [14] =58
+ incr_var [15] =59
+ incr_var [16] =60
+ incr_var [17] =61
+ incr_var [18] =62
+ incr_var [19] =63
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ns
+CPU Time:      0.750 seconds;       Data structure size:   0.0Mb
+Fri Apr  4 15:35:32 2025
+Done
