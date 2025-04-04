@@ -1,0 +1,15 @@
+ evenNumbers [0] =12
+ evenNumbers [1] =18
+ evenNumbers [2] =14
+ evenNumbers [3] =18
+ evenNumbers [4] =28
+ evenNumbers [5] =20
+ evenNumbers [6] =18
+ evenNumbers [7] =24
+ evenNumbers [8] =14
+ evenNumbers [9] =28
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ns
+CPU Time:      0.420 seconds;       Data structure size:   0.0Mb
+Fri Apr  4 16:00:33 2025
+Done
