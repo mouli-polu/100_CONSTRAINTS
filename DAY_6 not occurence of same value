@@ -1,0 +1,91 @@
+/*
+class Unique;
+  rand logic[3:0] a; //using shifting operation
+  bit[3:0] b[4:0];
+  
+  constraint c2 { 
+      foreach (b[j])
+        a!=b[j];
+    }
+  
+      function void post_randomize();
+        b={b[3],b[2],b[1],b[0],a};
+               
+      endfunction
+     
+endclass
+        module tb;
+          Unique uniq;
+          initial begin
+            uniq=new;
+            repeat(40) begin
+              uniq.randomize;
+        
+              $display("a =%h , b=%p ",uniq.a,uniq.b);
+            end
+          end
+         endmodule
+
+*/
+
+
+class Unique;
+  rand logic[3:0] a;
+  bit [3:0] que[$]; //using que  push pop methods
+  
+  constraint c2 { 
+    !(a inside{que});
+    }
+  
+      function void post_randomize();
+        que.push_front(a);
+        if(que.size==5)
+          que.pop_back;
+               
+      endfunction
+     
+endclass
+        module tb;
+          Unique uniq;
+          initial begin
+            uniq=new;
+            repeat(40) begin
+              uniq.randomize;
+        
+              $display("a=%h , que =%p ",uniq.a,uniq.que);
+            end
+          end
+         endmodule
+
+// class Unique;
+//   rand logic[3:0] a[];
+//   constraint c1{ 
+//     a.size() ==40;
+//   }
+//   constraint c2 { 
+//     foreach (a[i]) {
+//       if(i<5){
+//         foreach (a[j]) {
+//           if(j<i) 
+//             a[i]!=a[j];
+//         }
+//       }
+//           else 
+//             unique {a[i],a[i-1],a[i-2],a[i-3],a[i-4]};
+//       }
+//     }
+// endclass 
+//         module tb;
+//           Unique uniq;
+//           initial begin
+//             uniq=new;
+//             uniq.randomize;
+//             foreach(uniq.a[i])
+//               $display("a[%d] =%d",i,uniq.a[i]);
+//           end
+//         endmodule
+          
+ 
+         
+         
+
