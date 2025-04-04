@@ -1,0 +1,46 @@
+class multiple;
+  rand bit [6:0] a[]; //ranom multiple of 3 which may repeat same value also
+  rand bit [6:0] b[]; //random multiples of 3 doesnot repat (unique values) 
+  rand bit [6:0] c[]; //multiples of 3 in sequence
+  
+  constraint c1{
+    a.size() ==20;
+    b.size() ==20;
+    c.size() ==20;
+    
+    unique{b};
+  } 
+  
+  constraint c2{
+    foreach (a[i]) 
+      a[i]%3 ==0;
+  }
+  constraint c3{
+    foreach (b[i])
+      b[i] %3==0;
+  }
+  constraint c4{ 
+    foreach (c[i])
+      c[i]==i*3;
+  }
+  
+endclass
+module tb;
+  initial begin
+    multiple mp3=new();
+    mp3.randomize();
+    foreach (mp3.a[i]) 
+      $display ("a[%d] = %d ",i,mp3.a[i]);
+    
+    foreach (mp3.b[j]) 
+      $display ("b[%d] = %d ",j,mp3.b[j]);
+    
+    foreach (mp3.c[k]) 
+      $display ("c[%d] = %d ",k,mp3.c[k]);
+  end
+endmodule
+
+      
+      
+      
+    //https://edaplayground.com/x/MA_x
