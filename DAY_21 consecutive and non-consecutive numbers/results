@@ -1,0 +1,25 @@
+numbers[0] = 25
+numbers[1] = 12
+numbers[2] = 7
+numbers[3] = 3
+numbers[4] = 28
+numbers[5] = 20
+numbers[6] = 25
+numbers[7] = 3
+numbers[8] = 20
+numbers[9] = 9
+numbers[10] = 10
+numbers[11] = 11
+numbers[12] = 12
+numbers[13] = 13
+numbers[14] = 14
+numbers[15] = 15
+numbers[16] = 16
+numbers[17] = 17
+numbers[18] = 18
+numbers[19] = 19
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ns
+CPU Time:      0.520 seconds;       Data structure size:   0.0Mb
+Fri Apr  4 16:03:07 2025
+Done
