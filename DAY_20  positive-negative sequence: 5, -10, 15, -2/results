@@ -1,0 +1,21 @@
+array[          0] =           5
+array[          1] =         -10
+array[          2] =          15
+array[          3] =         -20
+array[          4] =          25
+array[          5] =         -30
+array[          6] =          35
+array[          7] =         -40
+array[          8] =          45
+array[          9] =         -50
+array[         10] =          55
+array[         11] =         -60
+array[         12] =          65
+array[         13] =         -70
+array[         14] =          75
+array[         15] =         -80
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ns
+CPU Time:      0.540 seconds;       Data structure size:   0.0Mb
+Fri Apr  4 15:59:46 2025
+Done
