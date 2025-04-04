@@ -1,3 +1,4 @@
+//https://edaplayground.com/x/YLSH
 // Code your design here
 // Write a constraint to generate the sequence 1122334455.
 // DAY_18   sequence 1122334455.
